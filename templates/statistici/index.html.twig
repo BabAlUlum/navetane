@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Navetane 2020 - Statistici{% endblock %}
+
+{% block body %}
+
+<div class="m-1 bg-dark">
+    {# Poule A - B #}
+    <div class="d-flex row col-sm-12">
+        {# Poule A #}
+        <div class="col-sm-6">
+            <h4 class="text-primary text-left">Poule A</h4>
+            <table class="table table-sm-12 m-3 bg-white">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Squadre</th>
+                        <th scope="col"><i class="fas fa-running text-success"></i></th>
+                        <th scope="col"><i class="fas fa-futbol"></i></th>
+                        <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                        <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Squadra A1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        {# Poule B #}
+        <div class="col-sm-6">
+            <h4 class="text-primary text-left">Poule B</h4>
+            <table class="table table-sm-12 m-3 bg-white">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Squadre</th>
+                        <th scope="col"><i class="fas fa-running text-success"></i></th>
+                        <th scope="col"><i class="fas fa-futbol"></i></th>
+                        <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                        <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Squadra B1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    {# ------------------------------------------------------------------------------------------------------- #}
+
+    <div class="d-flex row col-sm-12">
+        {# Goal #}
+        <div class="col-sm-6">
+            <h4 class="text-primary text-left">Miglior attaccante</h4>
+            <table class="table table-sm-12 m-3 bg-white">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">NOME Cognome</th>
+                        <th scope="col"><i class="fas fa-futbol"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Giocatore 01</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        {# Poule B #}
+        <div class="col-sm-6">
+            <h4 class="text-primary text-left">Cartelline</h4>
+            <table class="table table-sm-12 m-3 bg-white">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">NOME Cognome</th>
+                        <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                        <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Giocatore 01</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

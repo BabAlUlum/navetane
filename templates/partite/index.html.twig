@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PartiteController!{% endblock %}
+
+{% block body %}
+
+<div class="m-1 bg-dark">
+    <ul class="nav nav-tabs text-justify">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#partita01">Prossime partite</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#partita02">Partite passate</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        {# Part 01 #}
+        <div class="tab-pane fade active show" id="partita01">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+
+                    <h5 class="text-primary text-center">25/07/2020</h5>
+                    <div class="card border-primary text-primary col-sm-12 m-1">
+                        <div class="d-flex justify-content-center">
+                            {# Card01 #}
+                            <div class="card border-primary text-dark col-sm-4 m-1">
+                                <h4 class="text-center"> Squadra A1 </h4>
+                            </div>
+                            {# Card02 #}
+                            <div class="card border-primary text-primary col-sm-4 m-1">
+                                <div class="d-flex justify-content-center">
+                                    {# Score card01 #}
+                                    <div class="card border-primary text-dark col-sm-3 m-1">
+                                        <h4 class="text-center"> 0 </h4>
+                                    </div>
+                                    {# VS card #}
+                                    <div class="card border-white text-dark col-sm-3 m-1">
+                                        <h4 class="text-center"> - </h4>
+                                    </div>
+                                    {# Score card02 #}
+                                    <div class="card border-primary text-dark col-sm-3 m-1">
+                                        <h4 class="text-center"> 0 </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            {# Card03 #}
+                            <div class="card border-primary text-dark col-sm-4 m-1">
+                                <h4 class="text-center"> Squadra A2 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {# Part 02 #}
+        <div class="tab-pane fade" id="partita02">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h5 class="text-primary text-center">18/07/2020</h5>
+                    <div class="card border-primary text-primary col-sm-12 m-1">
+                        <div class="d-flex justify-content-center">
+                            {# Card01 #}
+                            <div class="card border-primary text-dark col-sm-4 m-1">
+                                <h4 class="text-center"> Squadra A1 </h4>
+                            </div>
+                            {# Card02 #}
+                            <div class="card border-primary text-primary col-sm-4 m-1">
+                                <div class="d-flex justify-content-center">
+                                    {# Score card01 #}
+                                    <div class="card border-primary text-dark col-sm-3 m-1">
+                                        <h4 class="text-center"> 0 </h4>
+                                    </div>
+                                    {# VS card #}
+                                    <div class="card border-white text-dark col-sm-3 m-1">
+                                        <h4 class="text-center"> - </h4>
+                                    </div>
+                                    {# Score card02 #}
+                                    <div class="card border-primary text-dark col-sm-3 m-1">
+                                        <h4 class="text-center"> 2 </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            {# Card03 #}
+                            <div class="card border-primary text-dark col-sm-4 m-1">
+                                <h4 class="text-center"> Squadra A4 </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

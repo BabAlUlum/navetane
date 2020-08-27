@@ -1,0 +1,503 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Navetane 2020 - Squadre{% endblock %}
+
+{% block body %}
+
+<div class="m-1 bg-dark">
+    <ul class="nav nav-tabs text-justify">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#squadra01">Squadra A1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra02">Squadra A2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra03">Squadra A3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra04">Squadra A4</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra05">Squadra B1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra06">Squadra B2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra07">Squadra B3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#squadra08">Squadra B4</a>
+        </li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <!-- Squadra 01-->
+        <div class="tab-pane fade active show" id="squadra01">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra A1</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 02-->
+        <div class="tab-pane fade" id="squadra02">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra A2</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 03-->
+        <div class="tab-pane fade" id="squadra03">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra A3</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 04-->
+        <div class="tab-pane fade" id="squadra04">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra A4</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 05-->
+        <div class="tab-pane fade" id="squadra05">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra B1</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 06-->
+        <div class="tab-pane fade" id="squadra06">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra B2</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 07-->
+        <div class="tab-pane fade" id="squadra07">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra B3</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Squadra 08-->
+        <div class="tab-pane fade" id="squadra08">
+            <div class="md-6 position-static p-4 pl-md-0">
+                <div class="text-center">
+                    <h2 class="text-primary">Nome Squadra B4</h2>
+
+                    {# List coach #}
+                    <div>
+                        <h4 class="text-primary text-left">Dirigente</h4>
+                        <div class="card border-primary text-primary col-sm-12 m-1">
+                            <div class="d-flex justify-content-center">
+                                {# Card01 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 01 </h4>
+                                </div>
+                                {# Card02 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 02 </h4>
+                                </div>
+                                {# Card03 #}
+                                <div class="card border-primary text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> Dirigente 03 </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# List player #}
+                    <div>
+                        <h4 class="text-primary text-left">Giocatori</h4>
+                        <table class="table table-sm-12 m-3 bg-white">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">NOME Cognome</th>
+                                    <th scope="col"><i class="fas fa-futbol"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-warning"></i></th>
+                                    <th scope="col"><i class="fas fa-square text-danger"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Giocatore 01</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {# List match #}
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

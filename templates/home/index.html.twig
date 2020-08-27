@@ -1,0 +1,216 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Navetane 2020{% endblock %}
+
+{% block body %}
+
+<div class="mt-1 bg-dark">
+ {# ----------------------------------------------------------------------------------------------------- #}
+    <div class="text-primary">
+        <div class="d-flex justify-content-center row col-md-12">
+        <h3 class="mt-2"> PROSSIME PARTITE  </h3>
+            <div class="card border-primary text-primary col-md-10 p-3 m-3">
+                <!-- slide -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        {# ---Carousel 01--- #}
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                {# card01 #}
+                                <div class="card border-white text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> SQUADRA A1 </h4>
+                                </div>
+                                {# card02 #}
+                                <div class="card border-primary text-primary col-sm-4 m-1">
+                                    <div class="d-flex justify-content-center">
+                                       {# Score card01 #}
+                                        <div class="card border-primary text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> 0 </h4>
+                                        </div>
+                                        {# VS card #}
+                                        <div class="card border-white text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> - </h4>
+                                        </div>
+                                        {# Score card02 #}
+                                        <div class="card border-primary text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> 0 </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                {# card03 #}
+                                <div class="card border-white text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> SQUADRA A2 </h4>
+                                </div>
+                            </div>
+                            {# Date et heure du match #}
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="card border-white bg-primary text-dark col-sm-2 m-1">
+                                    <h6 class="text-center"> 25/07/2020 - 16:00 </h6>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {# ---Carousel 02--- #}
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                {# card01 #}
+                                <div class="card border-white text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> SQUADRA A3 </h4>
+                                </div>
+                                {# card02 #}
+                                <div class="card border-primary text-primary col-sm-4 m-1">
+                                    <div class="d-flex justify-content-center">
+                                       {# Score card01 #}
+                                        <div class="card border-primary text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> 0 </h4>
+                                        </div>
+                                        {# VS card #}
+                                        <div class="card border-white text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> - </h4>
+                                        </div>
+                                        {# Score card02 #}
+                                        <div class="card border-primary text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> 0 </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                {# card03 #}
+                                <div class="card border-white text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> SQUADRA A4 </h4>
+                                </div>
+                            </div>
+                            {# Date et heure du match #}
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="card border-white bg-primary text-dark col-sm-2 m-1">
+                                    <h6 class="text-center"> 25/07/2020 - 17:30 </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        {# ---Carousel 03--- #}
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                {# card01 #}
+                                <div class="card border-white text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> SQUADRA B1 </h4>
+                                </div>
+                                {# card02 #}
+                                <div class="card border-primary text-primary col-sm-4 m-1">
+                                    <div class="d-flex justify-content-center">
+                                       {# Score card01 #}
+                                        <div class="card border-primary text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> 0 </h4>
+                                        </div>
+                                        {# VS card #}
+                                        <div class="card border-white text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> - </h4>
+                                        </div>
+                                        {# Score card02 #}
+                                        <div class="card border-primary text-dark col-sm-3 m-1">
+                                            <h4 class="text-center"> 0 </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                {# card03 #}
+                                <div class="card border-white text-dark col-sm-4 m-1">
+                                    <h4 class="text-center"> SQUADRA B2 </h4>
+                                </div>
+                            </div>
+                            {# Date et heure du match #}
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="card border-white bg-primary text-dark col-sm-2 m-1">
+                                    <h6 class="text-center"> 25/07/2020 - 19:00 </h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- slide -->
+            </div>
+        </div>
+    </div>
+ {# ----------------------------------------------------------------------------------------------------- #}
+    <div class="bg-dark">
+        {# Part 01 #}
+        <div class="d-flex justify-content-center row col-md-12 mb-3 p-3">
+            <div class="card border-primary text-primary col-sm-4">
+                <img class="card-img" src="images/humaan01.png" class="d-block w-100" alt="">
+            </div>
+            <div class="card border-dark bg-dark text-primary col-sm-7">
+                <h3 class="m-1 text-center"> TUTTE LE PARTITE </h3>
+                <div class="card border-dark bg-dark text-center col-sm-12 mb-3 m-1 p-3">
+                    <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed leo tellus. 
+                    Integer dui turpis, euismod a ultrices eu, scelerisque a lectus. 
+                    Sed pulvinar feugiat augue nec interdum. Aenean et ante in tellus cursus tincidunt.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed leo tellus. 
+                    Integer dui turpis, euismod a ultrices eu, scelerisque a lectus. 
+                    Sed pulvinar feugiat augue nec interdum. Aenean et ante in tellus cursus tincidunt.
+                    </p>
+                    <a class="btn bg-white col-sm-2 p-0 border-primary" href="{{ path('partite') }}" type="button">Guarda</a>
+                </div>
+            </div>
+        </div>
+
+        {# Part 02 #}
+        <div class="d-flex justify-content-center row col-md-12 mb-3 p-3">
+            <div class="card border-primary text-primary col-sm-4">
+                <img class="card-img" src="images/humaan02.png" class="d-block w-100" alt="">
+            </div>
+            <div class="card border-dark bg-dark text-primary col-sm-7">
+                <h3 class="m-1 text-center"> SQUADRE </h3>
+                <div class="card border-dark bg-dark text-center col-sm-12 mb-3 m-1 p-3">
+                    <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed leo tellus. 
+                    Integer dui turpis, euismod a ultrices eu, scelerisque a lectus. 
+                    Sed pulvinar feugiat augue nec interdum. Aenean et ante in tellus cursus tincidunt.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed leo tellus. 
+                    Integer dui turpis, euismod a ultrices eu, scelerisque a lectus. 
+                    Sed pulvinar feugiat augue nec interdum. Aenean et ante in tellus cursus tincidunt.
+                    </p>
+                    <a class="btn bg-white col-sm-2 p-0 border-primary" href="{{ path('squadre') }}" type="button">Guarda</a>
+                </div>
+            </div>
+        </div>
+        
+        {# Part 03 #}
+        <div class="d-flex justify-content-center row col-md-12 mb-3 p-3">
+            <div class="card border-primary text-primary col-sm-4">
+                <img class="card-img" src="images/humaan03.png" class="d-block w-100" alt="">
+            </div>
+            <div class="card border-dark bg-dark text-primary col-sm-7">
+                <h3 class="m-1 text-center"> STATISTICI </h3>
+                <div class="card border-dark bg-dark text-center col-sm-12 mb-3 m-1 p-3">
+                    <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed leo tellus. 
+                    Integer dui turpis, euismod a ultrices eu, scelerisque a lectus. 
+                    Sed pulvinar feugiat augue nec interdum. Aenean et ante in tellus cursus tincidunt.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed leo tellus. 
+                    Integer dui turpis, euismod a ultrices eu, scelerisque a lectus. 
+                    Sed pulvinar feugiat augue nec interdum. Aenean et ante in tellus cursus tincidunt.
+                    </p>
+                    <a class="btn bg-white col-sm-2 p-0 border-primary" href="{{ path('statistici') }}" type="button">Guarda</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ {# ----------------------------------------------------------------------------------------------------- #}
+
+</div>
+
+{% endblock %}

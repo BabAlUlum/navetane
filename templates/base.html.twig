@@ -2,107 +2,70 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
-            .salt {
-                margin-left:20%;
-                padding:1px 16px;
-                height:1000px;
-            }
-            body {
-            margin: 0;
-            }
-
-            ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 20%;
-            background-image: url("bgimage.jpg");
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-            }
-
-            li a {
-            display: block;
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            }
-
-            li a.active {
-            background-color: #34495e;
-            color: white;
-            }
-
-            li a:hover:not(.active) {
-            background-color: #177E89;
-            color: white;
-            }
+            .salt {}
         </style>
         {% block stylesheets %}{% endblock %}
     </head>
 
-    <body>
-        <ul>
-            <li class="nav-item">
-                <a class="active btn nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn nav-link" href="#">Squadre</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn nav-link" href="#">Statistici</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn nav-link" href="#">Chi siamo?</a>
-            </li>
-            <li class="nav-item active">
-                 {% if app.user %}
-                    <div class="">
-                        <a class="btn btn-danger" href="{{ path('app_logout') }}">{% trans %} Logout {% endtrans %}</a>
-                    </div>
-                {% else %}
-                    <div class="">
-                        <a class="btn btn-success" href="{{ path('app_login') }}">{% trans %} Login ! {% endtrans %}</a>
-                    </div>
-                {% endif %}
-            </li>
-        </ul>
-        <div class="mb-3" style="margin-left:20%">
-            <h2 class="text-center text-danger"> Avviso covid-19 ! </h3>
-            <div class="d-flex row no-gutters col-sm-12">
-                <div class="card border-white col-sm-2">
-                    <img src="covid01.jpg" alt="..." width="100" height="auto" class="rounded-circle">
-                </div>
-                <div class="card border-white col-sm-2">
-                    <img src="covid02.jpg" alt="..." width="100" height="auto" class="rounded-circle">
-                </div>
-                <div class="card border-white col-sm-2">
-                    <img src="covid03.jpg" alt="..." width="100" height="auto" class="rounded-circle">
-                </div>
-                <div class="card border-white col-sm-2">
-                    <img src="covid06.jpg" alt="..." width="100" height="auto" class="rounded-circle">
-                </div>
-                <div class="card border-white col-sm-2">
-                    <img src="covid04.jpg" alt="..." width="100" height="auto" class="rounded-circle">
-                </div>
-                <div class="card border-white col-sm-2">
-                    <img src="covid05.jpg" alt="..." width="100" height="auto" class="rounded-circle">
+    <body class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand text-primary" href="/">Navetane 2020</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <div class="">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('partite') }}">Partite</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('squadre') }}">Squadre</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('statistici') }}">Statistici</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('about') }}">Chi siamo?</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ path('contact') }}">Contatti</a>
+                        </li>
+                        <li class="nav-item active">
+                            {% if app.user %}
+                            <a class="nav-link text-danger" href="{{ path('app_logout') }}">{% trans %} Logout {% endtrans %}</a>
+                            {% endif %}
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
         {% block body %}{% endblock %}
 
         <!--Partie Footer-->
-        <div class="footer mt-3 justify-content-center" style="margin-left:20%">
-            <p class="text-center">
-                © 2020 Tous droits réservés à <a href="https://thiosey96.herokuapp.com/"> Seydina <i class="fas fa-laptop mr-1"></i></a>.
-            </p>
+
+        <div class="footer container mt-3 bg-white">
+            <section class="px-md-3 mx-sm-3 py-0 text-center z-depth-1 rounded">            
+                <div class="footer mt-3 justify-content-center">
+                    <!--Banière covid-19-->
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <img src="covid19.jpg" alt="..." class="">
+                    </div> <hr class="pt-0 mt-0 ">
+                    <!--Droit d'auteur-->
+                    <p class="text-center pt-0 pb-3">
+                        © 2020 Tutti i diritti riservati a <a href="https://thiosey96.herokuapp.com/" target="blank"> Seydina <i class="fas fa-laptop mr-1"></i></a>.
+                    </p>
+                </div>
+            </section>
         </div>
         <!--Partie Footer-->
 
